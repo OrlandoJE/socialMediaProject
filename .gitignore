@@ -26,3 +26,4 @@ dist-ssr
 # Ignore firebase configuration
 src/config/firebase.ts
 .firebase/
+.github/
