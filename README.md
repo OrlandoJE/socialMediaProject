@@ -1,3 +1,3 @@
 # Social Media Website Project
 This project uses React, TypeScript, TailwindCSS and Firebases.
-From ReactJS Coruse by Pedro Machado
+From ReactJS Course by Pedro Machado
