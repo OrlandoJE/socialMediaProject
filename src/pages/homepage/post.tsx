@@ -89,9 +89,13 @@ export const Post = (props: Props) => {
       </div>
       <div>
         <p className='mb-2 text-balance'>{post.description}</p>
-        <button className='p-2' onClick={hasUserLiked ? removeLike : addLike}>
-          {hasUserLiked ? <>&#128078; </> : <>&#128077; </>}
-          {likes ? likes.length : 0} Like(s)
+        <button
+          className={`p-2 mb-1 rounded-2xl ${
+            hasUserLiked && 'bg-cyan-100'
+          }`}
+          onClick={hasUserLiked ? removeLike : addLike}
+        >
+          &#128077; {likes ? likes.length : 0} Like(s)
         </button>
       </div>
     </div>

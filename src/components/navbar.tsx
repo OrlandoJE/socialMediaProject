@@ -6,7 +6,7 @@ import noProfilePicture from '/noProfilePicture.webp';
 export const Navbar = () => {
   const [user] = useAuthState(auth);
   return (
-    <div className='flex flex-row justify-end text-center items-center gap-16 px-4 py-2 bg-cyan-100'>
+    <div className='flex flex-row justify-end text-center items-center gap-16 px-4 py-2 bg-cyan-100 mb-4'>
       <div className='flex flex-row gap-4 justify-center font-semibold text-cyan-900'>
         <Link
           to='/'

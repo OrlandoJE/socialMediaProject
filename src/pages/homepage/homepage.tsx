@@ -36,12 +36,14 @@ export const Homepage = () => {
   return (
     <section className='flex flex-col justify-center items-center'>
       <h1 className='flex justify-center w-full mb-2'>Homepage</h1>
-      {user && (
+      {user ? (
         <Link to={'/createpost'}>
           <h2 className='hover:text-cyan-500 duration-200 border-b-4 border-cyan-900 hover:border-cyan-500 mb-4'>
             Create Post
           </h2>
         </Link>
+      ) : (
+        <>Please log in to see the posts</>
       )}
       <div>
         {postsList?.map((post) => (

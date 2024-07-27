@@ -51,6 +51,7 @@ export const CreateForm = () => {
       className='flex flex-col gap-4 justify-center items-center w-96 h-96 bg-cyan-100 rounded-xl'
     >
       <input
+        autoComplete='off'
         className='border-2 w-64'
         placeholder='Title...'
         {...register('title')}
