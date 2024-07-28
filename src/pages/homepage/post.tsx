@@ -95,7 +95,7 @@ export const Post = (props: Props) => {
           }`}
           onClick={hasUserLiked ? removeLike : addLike}
         >
-          &#128077; {likes ? likes.length : 0} Like(s)
+          &#128077; {likes ? likes.length : 0} Like{likes?.length === 1 ? '' : 's'}
         </button>
       </div>
     </div>
