@@ -43,7 +43,9 @@ export const Homepage = () => {
           </h2>
         </Link>
       ) : (
-        <>Please log in to see the posts</>
+        <Link className='underline' to={'/login'}>
+          Please log in to see the posts
+        </Link>
       )}
       <div>
         {postsList?.map((post) => (
